@@ -25,13 +25,13 @@ SECRET_KEY = "django-insecure-l)ds(_3@ue9umbus3h1m6c$(=_6t0a64k5-ayao8d1v_*@#@3p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    "acoustid_web.web",
+    "acoustid_web.apps.main",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -55,7 +55,7 @@ ROOT_URLCONF = "acoustid_web.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [BASE_DIR / "templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -74,7 +74,12 @@ WSGI_APPLICATION = "acoustid_web.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {}
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": "mydatabase",
+    }
+}
 
 
 # Password validation
