@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from acoustid_web.apps.main import views as main_views
+
 urlpatterns = [
+    path("", main_views.index),
     path("admin/", admin.site.urls),
 ]
