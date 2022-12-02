@@ -2,7 +2,9 @@
 name = "acoustid-web"
 version = "0.1.0"
 description = ""
+readme = "README.md"
 authors = ["Lukáš Lalinský <lalinsky@gmail.com>"]
+license = "AGPL-3.0"
 
 [tool.poetry.dependencies]
 python = "^3.9"
