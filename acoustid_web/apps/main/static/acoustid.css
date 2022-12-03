@@ -1,0 +1,40 @@
+html, body { height: 100vh; }
+
+.navbar-item img {
+    max-height: 30px;
+}
+
+.navbar-item.slogan {
+    color: #999;
+    padding-top: 0.7rem;
+}
+
+a {
+    color: #0145aa;
+}
+
+a:hover {
+	color: #a00;
+}
+
+.navbar-menu a.navbar-item {
+    color: #0145aa;
+    font-weight: 600;
+    padding-top: 0.7rem;
+}
+
+.navbar-menu a.navbar-item:focus,
+.navbar-menu a.navbar-item:hover {
+	color: #a00;
+    background: none;
+}
+
+    .footer {
+        border-top: 1px solid #e5e5e5;
+    }
+
+@media screen and (min-width: 1408px) {
+    .container:not(.is-max-desktop):not(.is-max-widescreen) {
+        max-width: 1000px;
+    }
+}

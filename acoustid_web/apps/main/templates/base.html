@@ -1,0 +1,68 @@
+{% load static %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock %} | AcoustID</title>
+    <link rel="stylesheet" href="{% static 'bulma.min.css' %}">
+    <link rel="stylesheet" href="{% static 'acoustid.css' %}">
+  </head>
+  <body>
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/">
+              <img src="{% static "acoustid-logo-header.png" %}">
+          </a>
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div class="navbar-menu">
+          <div class="navbar-start">
+              <div class="navbar-item slogan">
+                  open source audio identification
+              </div>
+          </div>
+          <div class="navbar-end">
+            <a class="navbar-item" href="{% url "about" %}">
+              About
+            </a>
+            <a class="navbar-item" href="{% url "docs" %}">
+              Documentation
+            </a>
+            <a class="navbar-item" href="{% url "stats" %}">
+              Statistics
+            </a>
+            <a class="navbar-item" href="{% url "login" %}">
+              Log in
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    {% block content %}{% endblock %}
+
+    <footer class="footer mt-auto">
+      <div class="content has-text-centered">
+        <p>
+          Software created by <a href="https://lalinsky.com/">Lukáš Lalinský</a>,
+          service hosted by <a href="https://acoustid.biz">AcoustID OÜ</a>,
+          data crowd-sourced by <a href="/stats">thousands of contributors</a>.
+        </p>
+        <p>
+          <a href="{% url "contact" %}">Contact</a> <span class="has-text-grey-light">|</span>
+          <a href="https://blog.acoustid.org/">Blog</a> <span class="has-text-grey-light">|</span>
+          <a href="https://twitter.com/acoustid">Twitter</a> <span class="has-text-grey-light">|</span>
+          <a href="https://www.facebook.com/acoustid">Facebook</a>
+        </p>
+      </div>
+    </footer>    
+
+  </body>
+</html>
+

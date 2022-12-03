@@ -19,6 +19,11 @@ from django.urls import path
 from acoustid_web.apps.main import views as main_views
 
 urlpatterns = [
-    path("", main_views.index),
+    path("", main_views.index, name="index"),
+    path("about", main_views.about, name="about"),
+    path("contact", main_views.contact, name="contact"),
+    path("stats", main_views.stats, name="stats"),
+    path("docs", main_views.docs, name="docs"),
+    path("login", main_views.login, name="login"),
     path("admin/", admin.site.urls),
 ]

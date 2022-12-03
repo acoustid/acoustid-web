@@ -1,22 +1,31 @@
-{% load static %}
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
-    <link rel="stylesheet" href="{% static 'bulma.min.css' %}">
-  </head>
-  <body>
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
   <section class="section">
     <div class="container">
-      <h1 class="title">
-        Hello World
-      </h1>
-      <p class="subtitle">
-        My first website with <strong>Bulma</strong>!
+      <p>
+        Welcome to AcoustID, the first fully open source audio identification service.
+      </p>
+      <p class="has-text-centered py-4">
+        <img src="https://acoustid.biz/static/homepage/how-does-it-work.svg" alt="How does it work?">
+      </p>
+      <p>
+        Welcome to AcoustID, the first fully open source audio identification service.
+      </p>
+      <p>
+        Welcome to AcoustID, the first fully open source audio identification service.
+      </p>
+      <p>
+        Welcome to AcoustID, the first fully open source audio identification service.
+      </p>
+      <p>
+        Welcome to AcoustID, the first fully open source audio identification service.
+      </p>
+      <p>
+        Welcome to AcoustID, the first fully open source audio identification service.
       </p>
     </div>
   </section>
-  </body>
-</html>
+{% endblock %}
