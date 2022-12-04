@@ -14,7 +14,7 @@ a {
 }
 
 a:hover {
-	color: #a00;
+	color: #de3a3a;
 }
 
 .navbar-menu a.navbar-item {
@@ -25,13 +25,13 @@ a:hover {
 
 .navbar-menu a.navbar-item:focus,
 .navbar-menu a.navbar-item:hover {
-	color: #a00;
+	color: #de3a3a;
     background: none;
 }
 
-    .footer {
-        border-top: 1px solid #e5e5e5;
-    }
+.footer {
+    border-top: 1px solid #e5e5e5;
+}
 
 @media screen and (min-width: 1408px) {
     .container:not(.is-max-desktop):not(.is-max-widescreen) {

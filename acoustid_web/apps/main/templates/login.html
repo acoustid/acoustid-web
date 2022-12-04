@@ -8,6 +8,10 @@
       <p>
           Login page
       </p>
+      <p>
+          <a href="{% url "social:begin" "google-oauth2" %}">Google</a>
+          <a href="{% url "social:begin" "github-oauth2" %}">GitHub</a>
+      </p>
     </div>
   </section>
 {% endblock %}

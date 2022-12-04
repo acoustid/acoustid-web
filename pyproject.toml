@@ -11,6 +11,7 @@ python = "^3.9"
 django = "^4.0.0"
 django-mail-auth = "^3.2.0"
 whitenoise = "^6.2.0"
+social-auth-app-django = "^5.0.0"
 
 [tool.poetry.dev-dependencies]
 # grpcio-tools = "^1.36.1"
