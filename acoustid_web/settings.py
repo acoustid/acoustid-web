@@ -133,6 +133,8 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # Social Auth settings
 # https://python-social-auth.readthedocs.io/en/latest/configuration/django.html#authentication-backends
 
+AUTH_USER_MODEL = "main.User"
+
 AUTHENTICATION_BACKENDS = (
     "social_core.backends.google.GoogleOAuth2",
     "social_core.backends.github.GithubOAuth2",
