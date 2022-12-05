@@ -1,5 +1,6 @@
 *.egg-info
 *.pyc
+/.envrc
 __pycache__
 /venv
 /mydatabase
