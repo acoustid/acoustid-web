@@ -4,4 +4,4 @@ set -eux
 
 cd $(dirname $0)/..
 
-poetry run python manage.py runserver "127.0.0.1:5000" "$@"
+poetry run python manage.py runserver "$@"
